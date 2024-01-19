@@ -6,7 +6,7 @@ resource "aws_lambda_function" "bigpanda_lambda" {
   # "handler" is the name of the property under which the handler function was
   # exported in the attached zip file.
   handler     = "CloudwatchBigpandaAddTopic.handler"
-  runtime     = "nodejs16.x"
+  runtime     = "nodejs20.x"
   timeout     = 900
   memory_size = 256
   role        = local.bigpanda_role_arn
