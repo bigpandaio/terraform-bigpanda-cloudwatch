@@ -8,7 +8,7 @@ This codebase is for setting up infrastruture using terraform for the BigPanda <
 ```terraform
     module "cloudwatch" {
         source = "bigpandaio/cloudwatch/bigpanda"
-        version = "1.0.0"
+        version = "1.2.0"
         api_endpoint = "<use endpoint from BigPanda integration>"
         app_key = "<use app_key from BigPanda integration>"
         bearer_token = "<use bearer_token from BigPanda integration>"

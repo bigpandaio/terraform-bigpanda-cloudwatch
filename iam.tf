@@ -1,6 +1,6 @@
 resource "aws_iam_role" "bigpanda_role" {
   count = var.daily_event_rule ? 1 : 0
-  name  = "BigPandaCloudWatchLambda-${data.aws_region.current.name}"
+  name  = "BigPandaCloudWatchLambda-${data.aws_region.current.region}"
   assume_role_policy = jsonencode({
     "Version" = "2012-10-17",
     "Statement" = [
